@@ -12,6 +12,7 @@ specifiers:
   pinia: ^2.0.0-rc.3
   prettier: ^2.0.5
   source-map-support: ^0.5.19
+  ts-debounce: ^3.0.0
   ts-node: ^10.1.0
   tsup: ^4.13.1
   typescript: ^4.3.5
@@ -29,6 +30,7 @@ devDependencies:
   pinia: 2.0.0-rc.3_9df8c015c0d4f19e887a01e4cac529d3
   prettier: 2.3.2
   source-map-support: 0.5.19
+  ts-debounce: 3.0.0
   ts-node: 10.1.0_dea0625f6d31b223e93dc3dc354b8b43
   tsup: 4.13.1_ts-node@10.1.0+typescript@4.3.5
   typescript: 4.3.5
@@ -2674,6 +2676,10 @@ packages:
   /trim-off-newlines/1.0.1:
     resolution: {integrity: sha1-n5up2e+odkw4dpi8v+sshI8RrbM=}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /ts-debounce/3.0.0:
+    resolution: {integrity: sha512-7jiRWgN4/8IdvCxbIwnwg2W0bbYFBH6BxFqBjMKk442t7+liF2Z1H6AUCcl8e/pD93GjPru+axeiJwFmRww1WQ==}
     dev: true
 
   /ts-interface-checker/0.1.13:

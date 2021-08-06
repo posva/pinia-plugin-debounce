@@ -1,16 +1,11 @@
 import { PiniaPluginContext } from 'pinia'
 
-export function mylib() {
-  return true
-}
-
 /**
  * Accepted interface for the debounce function passed to `PiniaDebounce`.
  */
 export interface Debounce {
   (fn: (...args: any[]) => any, time: number): any
 }
-
 
 /**
  * Adds a `debounce` option to your store to debounce any action. The `debounce`
@@ -27,18 +22,20 @@ export interface Debounce {
  *
  * @param debounce - debounce method to be invoked
  */
-export const PiniaDebounce = (debounce: Debounce) => ({ options, store }: PiniaPluginContext) => {
-  const { debounce: debounceOptions } = options
-  if (debounceOptions) {
-    return Object.keys(debounceOptions).reduce((debouncedActions, action) => {
-      debouncedActions[action] = debounce(
-        store[action],
-        debounceOptions[action]!
-      )
-      return debouncedActions
-    }, {} as Record<string, (...args: any[]) => any>)
+export const PiniaDebounce =
+  (debounce: Debounce) =>
+  ({ options, store }: PiniaPluginContext) => {
+    const { debounce: debounceOptions } = options
+    if (debounceOptions) {
+      return Object.keys(debounceOptions).reduce((debouncedActions, action) => {
+        debouncedActions[action] = debounce(
+          store[action],
+          debounceOptions[action]!
+        )
+        return debouncedActions
+      }, {} as Record<string, (...args: any[]) => any>)
+    }
   }
-}
 
 declare module 'pinia' {
   export interface DefineStoreOptionsBase<S, Store> {
