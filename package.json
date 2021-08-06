@@ -1,6 +1,6 @@
 {
   "name": "@pinia/plugin-debounce",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Debounce any action in your pinia 🍍 store!",
   "publishConfig": {
     "access": "public"
