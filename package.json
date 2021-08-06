@@ -77,7 +77,7 @@
     "commit-msg": "node scripts/verifyCommit.js"
   },
   "lint-staged": {
-    "*.js": [
+    "*.?(m)js": [
       "prettier --write"
     ],
     "*.ts?(x)": [
