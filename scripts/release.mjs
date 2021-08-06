@@ -1,7 +1,6 @@
-// @ts-check
 import minimist from 'minimist'
 import _fs from 'fs'
-import { dirname, join, resolve } from 'path'
+import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import chalk from 'chalk'
 import semver from 'semver'
