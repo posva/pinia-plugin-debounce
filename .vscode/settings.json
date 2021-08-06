@@ -5,11 +5,6 @@
   "[typescript]": {
     "editor.formatOnSave": false
   },
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    { "language": "typescript", "autoFix": true }
-  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }
