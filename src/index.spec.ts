@@ -13,6 +13,9 @@ describe('Pinia Debounce', () => {
       one() {
         this.count++
       },
+      two() {
+        this.count++
+      },
     },
     debounce: {
       one: 1,
@@ -26,7 +29,7 @@ describe('Pinia Debounce', () => {
       function one() {
         count.value++
       }
-      return { count, one }
+      return { count, one, two: one }
     },
     {
       debounce: {
@@ -52,6 +55,9 @@ describe('Pinia Debounce', () => {
     expect(store.count).toBe(1)
     await delay(1)
     expect(store.count).toBe(1)
+
+    store.two()
+    expect(store.count).toBe(2)
   })
 
   it('debounces setup', async () => {
@@ -64,6 +70,38 @@ describe('Pinia Debounce', () => {
     await delay(1)
     expect(store.count).toBe(1)
     await delay(1)
+    expect(store.count).toBe(1)
+
+    store.two()
+    expect(store.count).toBe(2)
+  })
+
+  it('ignores no debounce in options', () => {
+    const store = defineStore('id', {
+      state: () => ({ count: 0 }),
+      actions: {
+        one() {
+          this.count++
+        },
+      },
+    })()
+
+    expect(store.count).toBe(0)
+    store.one()
+    expect(store.count).toBe(1)
+  })
+
+  it('ignores no debounce in setup', () => {
+    const store = defineStore('id', () => {
+      const count = ref(0)
+      function one() {
+        count.value++
+      }
+      return { count, one }
+    })()
+
+    expect(store.count).toBe(0)
+    store.one()
     expect(store.count).toBe(1)
   })
 
