@@ -3,10 +3,16 @@
   Pinia Debounce
 </h1>
 
-<a href="https://npmjs.com/package/@pinia/plugin-debounce"><img src="https://badgen.net/npm/v/@pinia/plugin-debounce/latest" alt="npm package"></a>
-<a href="https://github.com/posva/pinia-plugin-debounce/actions/workflows/test.yml"><img src="https://github.com/posva/pinia-plugin-debounce/workflows/test/badge.svg" alt="build status"></a>
-<a href="https://codecov.io/github/posva/pinia-plugin-debounce"><img src="https://badgen.net/codecov/c/github/posva/pinia-plugin-debounce" alt="code coverage"></a>
-
+<a href="https://npmjs.com/package/@pinia/plugin-debounce">
+  <img src="https://badgen.net/npm/v/@pinia/plugin-debounce/latest" alt="npm package">
+</a>
+<a href="https://github.com/posva/pinia-plugin-debounce/actions/workflows/test.yml">
+  <img src="https://github.com/posva/pinia-plugin-debounce/workflows/test/badge.svg" alt="build status">
+</a>
+<a href="https://codecov.io/gh/posva/pinia-plugin-debounce">
+  <img src="https://codecov.io/gh/posva/pinia-plugin-debounce/branch/main/graph/badge.svg?token=9WqnRrLf1Q"/>
+</a>
+    
 Debounce any action in your pinia 🍍 store!
 
 This is also a very good example of how to create a pinia plugin and how to type it.
