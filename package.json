@@ -15,12 +15,14 @@
     "import": "./dist/index.mjs"
   },
   "sideEffects": false,
+  "funding": "https://github.com/sponsors/posva",
   "author": {
     "name": "Eduardo San Martin Morote",
     "email": "posva13@gmail.com"
   },
   "scripts": {
     "dev": "mocha -w",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
     "test": "pnpm run test:cov",
     "lint": "prettier -c --parser typescript \"src/**/*.[jt]s?(x)\"",
     "lint:fix": "yarn run lint --write",
