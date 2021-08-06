@@ -4,6 +4,9 @@ on:
   push:
     paths-ignore:
       - 'docs/**'
+    # We don't need to test tags
+    tags-ignore:
+      - v*
 
 jobs:
   build:
