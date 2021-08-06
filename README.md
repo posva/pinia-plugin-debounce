@@ -1,20 +1,53 @@
-# lib-boilerplate-ts [![Build Status](https://badgen.net/circleci/github/posva/lib-boilerplate-ts/master)](https://circleci.com/gh/posva/lib-boilerplate-ts) [![npm package](https://badgen.net/npm/v/lib-boilerplate-ts)](https://www.npmjs.com/package/lib-boilerplate-ts) [![coverage](https://badgen.net/codecov/c/github/posva/lib-boilerplate-ts/master)](https://codecov.io/github/posva/lib-boilerplate-ts) [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/posva/thanks)
+<p align="center">
+  <a href="https://pinia.esm.dev" target="_blank" rel="noopener noreferrer">
+    <img height="64" src="https://pinia.esm.dev/logo.svg" alt="Pinia logo">
+  </a>
+</p>
+<br/>
+<p align="center">
+  <a href="https://npmjs.com/package/@pinia/plugin-debounce"><img src="https://badgen.net/npm/v/@pinia/plugin/latest" alt="npm package"></a>
+  <a href="https://github.com/posva/pinia-plugin-debounce/actions/workflows/test.yml"><img src="https://github.com/posva/pinia-plugin-debounce/workflows/test/badge.svg" alt="build status"></a>
+  <a href="https://codecov.io/github/posva/pinia-plugin-debounce"><img src="https://badgen.net/codecov/c/github/posva/pinia-plugin-debounce" alt="code coverage"></a>
+</p>
+<br/>
 
-> Some awesome description
+# Pinia Debounce
 
-Demo (TODO link)
+> Make any action debounced
 
 ## Installation
 
 ```sh
-npm install lib-boilerplate
+npm install @pinia/plugin-debounce
 ```
+
+You also need to use a `debounce` function like [lodash.debounce](https://lodash.com/docs/4.17.15#debounce) or [ts-debounce](https://github.com/chodorowicz/ts-debounce)
 
 ## Usage
 
-## API
+```js
+import { debounce } from 'ts-debounce'
+import { PiniaDebounce } from '@pinia/plugin-debounce'
 
-## Related
+// Pass the plugin to your application's pinia plugin
+pinia.use(PiniaDebounce(debounce))
+```
+
+You can then use a `debounce` option in your stores:
+
+```js
+defineStore('id', {
+  actions: {
+    someSearch() {
+      // ...
+    },
+  },
+  debounce: {
+    // debounce all `someSearch` calls by 300ms
+    someSearch: 300,
+  },
+})
+```
 
 ## License
 
