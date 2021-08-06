@@ -50,20 +50,39 @@
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.4.13",
+    "chalk": "^4.1.2",
     "codecov": "^3.8.3",
     "conventional-changelog-cli": "^2.1.1",
+    "enquirer": "^2.3.6",
     "esbuild-register": "^2.6.0",
+    "execa": "^5.1.1",
     "expect": "^27.0.6",
+    "lint-staged": "^11.1.2",
+    "minimist": "^1.2.5",
     "mocha": "^9.0.3",
     "nyc": "^15.1.0",
     "pinia": "^2.0.0-rc.3",
     "prettier": "^2.0.5",
+    "semver": "^7.3.5",
     "source-map-support": "^0.5.19",
     "ts-debounce": "^3.0.0",
     "ts-node": "^10.1.0",
     "tsup": "^4.13.1",
     "typescript": "^4.3.5",
-    "vue": "^3.2.0-beta.7"
+    "vue": "^3.2.0-beta.7",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
   },
   "repository": {
     "type": "git",
