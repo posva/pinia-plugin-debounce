@@ -35,7 +35,14 @@
     "LICENSE",
     "README.md"
   ],
-  "keywords": [],
+  "keywords": [
+    "pinia",
+    "plugin",
+    "debounce",
+    "example",
+    "starter",
+    "boilerplate"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
