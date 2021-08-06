@@ -12,10 +12,10 @@
 <a href="https://codecov.io/gh/posva/pinia-plugin-debounce">
   <img src="https://codecov.io/gh/posva/pinia-plugin-debounce/branch/main/graph/badge.svg?token=9WqnRrLf1Q"/>
 </a>
-    
+
 Debounce any action in your pinia 🍍 store!
 
-This is also a very good example of how to create a pinia plugin and how to type it.
+This is also a very good example of **how to create a pinia plugin and how to type it**.
 
 ## Installation
 
