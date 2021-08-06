@@ -20,6 +20,6 @@ jobs:
           cache: 'pnpm'
 
       - run: pnpm install --frozen-lockfile
-      # - run: pnpm run lint
+      - run: pnpm run lint
       - run: pnpm run test
-      # - run: pnpm codecov
+      - run: pnpm codecov

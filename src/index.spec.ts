@@ -30,7 +30,7 @@ describe('Pinia Debounce', () => {
     },
     {
       debounce: {
-        one: 1
+        one: 1,
       },
     }
   )
@@ -70,12 +70,11 @@ describe('Pinia Debounce', () => {
   // ts tests
   defineStore('id', {
     actions: {},
-    debounce: {}
+    debounce: {},
   })
   defineStore('id', {
-    debounce: {}
+    debounce: {},
   })
-
 
   // this could error but it makes the types too strict
   // defineStore('id', {
@@ -84,9 +83,9 @@ describe('Pinia Debounce', () => {
 
   // @ts-expect-error
   defineStore('id', {
-    actions: { two() { }},
+    actions: { two() {} },
     debounce: {
-      one: 0
-    }
+      one: 0,
+    },
   })
 })

@@ -22,6 +22,8 @@
   "scripts": {
     "dev": "mocha -w",
     "test": "pnpm run test:cov",
+    "lint": "prettier -c --parser typescript \"src/**/*.[jt]s?(x)\"",
+    "lint:fix": "yarn run lint --write",
     "test:types": "tsc --build ./tsconfig.json",
     "test:cov": "nyc mocha",
     "build": "pnpm build:esm & pnpm build:iife & wait",
@@ -48,6 +50,7 @@
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.4.13",
+    "codecov": "^3.8.3",
     "conventional-changelog-cli": "^2.1.1",
     "esbuild-register": "^2.6.0",
     "expect": "^27.0.6",
