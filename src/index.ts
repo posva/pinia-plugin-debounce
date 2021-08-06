@@ -30,6 +30,7 @@ export const PiniaDebounce =
       return Object.keys(debounceOptions).reduce((debouncedActions, action) => {
         debouncedActions[action] = debounce(
           store[action],
+          // @ts-ignore: this fails in build...
           debounceOptions[action]!
         )
         return debouncedActions
