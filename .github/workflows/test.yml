@@ -2,6 +2,8 @@ name: test
 
 on:
   push:
+    braches:
+      - '**'
     paths-ignore:
       - 'docs/**'
     # We don't need to test tags
