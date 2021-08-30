@@ -8,7 +8,7 @@ specifiers:
   codecov: ^3.8.3
   conventional-changelog-cli: ^2.1.1
   enquirer: ^2.3.6
-  esbuild-register: ^2.6.0
+  esbuild-register: ^3.0.0
   execa: ^5.1.1
   expect: ^27.0.6
   lint-staged: ^11.1.2
@@ -34,7 +34,7 @@ devDependencies:
   codecov: 3.8.3
   conventional-changelog-cli: 2.1.1
   enquirer: 2.3.6
-  esbuild-register: 2.6.0
+  esbuild-register: 3.0.0
   execa: 5.1.1
   expect: 27.0.6
   lint-staged: 11.1.2
@@ -1149,10 +1149,11 @@ packages:
     resolution: {integrity: sha512-Um/+FxMr9CISWh0bi5Zv0iOD+4cFh5qLeks1qhAopKVAJw3drgKbKySikp7wGhDL0HPeaja0P5ULZrxLkniUVg==}
     dev: true
 
-  /esbuild-register/2.6.0:
-    resolution: {integrity: sha512-2u4AtnCXP5nivtIxZryiZOUcEQkOzFS7UhAqibUEmaTAThJ48gDLYTBF/Fsz+5r0hbV1jrFE6PQvPDUrKZNt/Q==}
+  /esbuild-register/3.0.0:
+    resolution: {integrity: sha512-No7U3ZUd6gPrrC6gqdb3XFcf2lNqzn8nvQXcgcyOl8szMVuN6YUvOplnmakxWyogI9d8SiJMl0uzBzJck+Aoxw==}
+    peerDependencies:
+      esbuild: '>=0.12 <1'
     dependencies:
-      esbuild: 0.12.23
       jsonc-parser: 3.0.0
     dev: true
 
