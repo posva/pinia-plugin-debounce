@@ -21,7 +21,7 @@ specifiers:
   source-map-support: ^0.5.20
   ts-debounce: ^3.0.0
   ts-node: ^10.2.1
-  tsup: ^4.14.0
+  tsup: ^5.3.0
   typescript: ^4.4.3
   vue: ^3.2.19
   yorkie: ^2.0.0
@@ -47,7 +47,7 @@ devDependencies:
   source-map-support: 0.5.20
   ts-debounce: 3.0.0
   ts-node: 10.2.1_e3e73942d4faddf00e26f66fdd36069b
-  tsup: 4.14.0_ts-node@10.2.1+typescript@4.4.3
+  tsup: 5.3.0_ts-node@10.2.1+typescript@4.4.3
   typescript: 4.4.3
   vue: 3.2.19
   yorkie: 2.0.0
@@ -1193,8 +1193,8 @@ packages:
       jsonc-parser: 3.0.0
     dev: true
 
-  /esbuild/0.12.23:
-    resolution: {integrity: sha512-qvS4aKnmKikoWGscd5lVAzgobMovlH/JhaWitRiQ8xJx0x1Fym0pqVjMFs43Nvff8WpibeWm+fWoLK88T1U0Xw==}
+  /esbuild/0.12.29:
+    resolution: {integrity: sha512-w/XuoBCSwepyiZtIRsKsetiLDUVGPVw1E/R3VTFSecIy8UR7Cq3SOtwKHJMFoVqqVG36aGkzh4e8BvpO1Fdc7g==}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -3205,8 +3205,8 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tsup/4.14.0_ts-node@10.2.1+typescript@4.4.3:
-    resolution: {integrity: sha512-77rWdzhikTP9mQ34XMRzK83tw++LF6f4ox/HNERlgesB7g6g5VQ1iJlueG9O0P9HAZGVKavUwyoZv0+322p6rg==}
+  /tsup/5.3.0_ts-node@10.2.1+typescript@4.4.3:
+    resolution: {integrity: sha512-/LZTuAj1Lhh7iXBhtWTWjPodtmOkg6HnhdWo+sl4JftJTAJqnxnHerOiFYjPeA5RIhcaFc2w2Sho1rGLJ7rLhw==}
     hasBin: true
     peerDependencies:
       typescript: ^4.2.3
@@ -3218,7 +3218,7 @@ packages:
       chalk: 4.1.2
       chokidar: 3.5.2
       debug: 4.3.2
-      esbuild: 0.12.23
+      esbuild: 0.12.29
       execa: 5.1.1
       globby: 11.0.4
       joycon: 3.0.1
