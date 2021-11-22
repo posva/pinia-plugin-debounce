@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 import chalk from 'chalk'
 import semver from 'semver'
 import enquirer from 'enquirer'
-import execa from 'execa'
+import { execa } from 'execa'
 
 const { prompt } = enquirer
 const fs = _fs.promises
