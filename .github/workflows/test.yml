@@ -27,4 +27,5 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm run lint
       - run: pnpm run test
-      - run: pnpm codecov
+
+      - uses: codecov/codecov-action@v2
