@@ -18,7 +18,7 @@ specifiers:
   prettier: ^2.5.1
   semver: ^7.3.5
   source-map-support: ^0.5.21
-  ts-debounce: ^3.0.0
+  ts-debounce: ^4.0.0
   ts-node: ^10.4.0
   tsup: ^5.11.1
   typescript: ^4.5.3
@@ -43,7 +43,7 @@ devDependencies:
   prettier: 2.5.1
   semver: 7.3.5
   source-map-support: 0.5.21
-  ts-debounce: 3.0.0
+  ts-debounce: 4.0.0
   ts-node: 10.4.0_74e588db5264178750052e53ffe97b8f
   tsup: 5.11.1_ts-node@10.4.0+typescript@4.5.3
   typescript: 4.5.3
@@ -3284,8 +3284,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-debounce/3.0.0:
-    resolution: {integrity: sha512-7jiRWgN4/8IdvCxbIwnwg2W0bbYFBH6BxFqBjMKk442t7+liF2Z1H6AUCcl8e/pD93GjPru+axeiJwFmRww1WQ==}
+  /ts-debounce/4.0.0:
+    resolution: {integrity: sha512-+1iDGY6NmOGidq7i7xZGA4cm8DAa6fqdYcvO5Z6yBevH++Bdo9Qt/mN0TzHUgcCcKv1gmh9+W5dHqz8pMWbCbg==}
     dev: true
 
   /ts-interface-checker/0.1.13:
