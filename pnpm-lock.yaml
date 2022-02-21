@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@istanbuljs/nyc-config-typescript': ^1.0.2
   '@types/mocha': ^9.1.0
-  '@types/node': ^16.11.24
+  '@types/node': ^16.11.25
   chalk: ^4.1.2
   conventional-changelog-cli: ^2.2.2
   enquirer: ^2.3.6
@@ -12,7 +12,7 @@ specifiers:
   expect: ^27.5.1
   lint-staged: ^12.3.4
   minimist: ^1.2.5
-  mocha: ^9.2.0
+  mocha: ^9.2.1
   nyc: ^15.1.0
   pinia: ^2.0.11
   prettier: ^2.5.1
@@ -28,7 +28,7 @@ specifiers:
 devDependencies:
   '@istanbuljs/nyc-config-typescript': 1.0.2_nyc@15.1.0
   '@types/mocha': 9.1.0
-  '@types/node': 16.11.24
+  '@types/node': 16.11.25
   chalk: 4.1.2
   conventional-changelog-cli: 2.2.2
   enquirer: 2.3.6
@@ -37,14 +37,14 @@ devDependencies:
   expect: 27.5.1
   lint-staged: 12.3.4_enquirer@2.3.6
   minimist: 1.2.5
-  mocha: 9.2.0
+  mocha: 9.2.1
   nyc: 15.1.0
   pinia: 2.0.11_typescript@4.5.5+vue@3.2.31
   prettier: 2.5.1
   semver: 7.3.5
   source-map-support: 0.5.21
   ts-debounce: 4.0.0
-  ts-node: 10.5.0_8909f72e9dc4fe10ad28f9faadc9a4a1
+  ts-node: 10.5.0_ad16171857a0edcfc445c7bfcf336eb6
   tsup: 5.11.13_ts-node@10.5.0+typescript@4.5.5
   typescript: 4.5.5
   vue: 3.2.31
@@ -314,7 +314,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 16.11.24
+      '@types/node': 16.11.25
       '@types/yargs': 16.0.4
       chalk: 4.1.2
     dev: true
@@ -380,8 +380,8 @@ packages:
     resolution: {integrity: sha512-QCWHkbMv4Y5U9oW10Uxbr45qMMSzl4OzijsozynUAgx3kEHUdXB00udx2dWDQ7f2TU2a2uuiFaRZjCe3unPpeg==}
     dev: true
 
-  /@types/node/16.11.24:
-    resolution: {integrity: sha512-Ezv33Rl4mIi6YdSHfIRNBd4Q9kUe5okiaw/ikvJiJDmuQZNW5kfdg7+oQPF8NO6sTcr3woIpj3jANzTXdvEZXA==}
+  /@types/node/16.11.25:
+    resolution: {integrity: sha512-NrTwfD7L1RTc2qrHQD4RTTy4p0CO2LatKBEKEds3CaVuhoM/+DJzmWZl5f+ikR8cm8F5mfJxK+9rQq07gRiSjQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -2268,8 +2268,8 @@ packages:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: true
 
-  /mocha/9.2.0:
-    resolution: {integrity: sha512-kNn7E8g2SzVcq0a77dkphPsDSN7P+iYkqE0ZsGCYWRsoiKjOt+NvXfaagik8vuDa6W5Zw3qxe8Jfpt5qKf+6/Q==}
+  /mocha/9.2.1:
+    resolution: {integrity: sha512-T7uscqjJVS46Pq1XDXyo9Uvey9gd3huT/DD9cYBb4K2Xc/vbKRPUWK067bxDQRK0yIz6Jxk73IrnimvASzBNAQ==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
     dependencies:
@@ -2668,7 +2668,7 @@ packages:
     dependencies:
       import-cwd: 3.0.0
       lilconfig: 2.0.4
-      ts-node: 10.5.0_8909f72e9dc4fe10ad28f9faadc9a4a1
+      ts-node: 10.5.0_ad16171857a0edcfc445c7bfcf336eb6
       yaml: 1.10.2
     dev: true
 
@@ -3283,7 +3283,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node/10.5.0_8909f72e9dc4fe10ad28f9faadc9a4a1:
+  /ts-node/10.5.0_ad16171857a0edcfc445c7bfcf336eb6:
     resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
     hasBin: true
     peerDependencies:
@@ -3302,7 +3302,7 @@ packages:
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 16.11.24
+      '@types/node': 16.11.25
       acorn: 8.5.0
       acorn-walk: 8.2.0
       arg: 4.1.3
