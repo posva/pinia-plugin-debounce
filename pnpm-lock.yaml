@@ -10,7 +10,7 @@ specifiers:
   esbuild-register: ^3.3.2
   execa: ^6.1.0
   expect: ^27.5.1
-  lint-staged: ^12.3.4
+  lint-staged: ^12.3.5
   minimist: ^1.2.5
   mocha: ^9.2.1
   nyc: ^15.1.0
@@ -19,9 +19,9 @@ specifiers:
   semver: ^7.3.5
   source-map-support: ^0.5.21
   ts-debounce: ^4.0.0
-  ts-node: ^10.5.0
+  ts-node: ^10.7.0
   tsup: ^5.11.13
-  typescript: ^4.5.5
+  typescript: ^4.6.2
   vue: ^3.2.31
   yorkie: ^2.0.0
 
@@ -35,18 +35,18 @@ devDependencies:
   esbuild-register: 3.3.2
   execa: 6.1.0
   expect: 27.5.1
-  lint-staged: 12.3.4_enquirer@2.3.6
+  lint-staged: 12.3.5_enquirer@2.3.6
   minimist: 1.2.5
   mocha: 9.2.1
   nyc: 15.1.0
-  pinia: 2.0.11_typescript@4.5.5+vue@3.2.31
+  pinia: 2.0.11_typescript@4.6.2+vue@3.2.31
   prettier: 2.5.1
   semver: 7.3.5
   source-map-support: 0.5.21
   ts-debounce: 4.0.0
-  ts-node: 10.5.0_f94da96e4d78a751cdd66b59796b8fdd
-  tsup: 5.11.13_ts-node@10.5.0+typescript@4.5.5
-  typescript: 4.5.5
+  ts-node: 10.7.0_045cabcbf8818eda83522fe731c87088
+  tsup: 5.11.13_ts-node@10.7.0+typescript@4.6.2
+  typescript: 4.6.2
   vue: 3.2.31
   yorkie: 2.0.0
 
@@ -2050,8 +2050,8 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/12.3.4_enquirer@2.3.6:
-    resolution: {integrity: sha512-yv/iK4WwZ7/v0GtVkNb3R82pdL9M+ScpIbJLJNyCXkJ1FGaXvRCOg/SeL59SZtPpqZhE7BD6kPKFLIDUhDx2/w==}
+  /lint-staged/12.3.5_enquirer@2.3.6:
+    resolution: {integrity: sha512-oOH36RUs1It7b9U/C7Nl/a0sLfoIBcMB8ramiB3nuJ6brBqzsWiUAFSR5DQ3yyP/OR7XKMpijtgKl2DV1lQ3lA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -2625,7 +2625,7 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pinia/2.0.11_typescript@4.5.5+vue@3.2.31:
+  /pinia/2.0.11_typescript@4.6.2+vue@3.2.31:
     resolution: {integrity: sha512-JzcmnMqu28PNWOjDgEDK6fTrIzX8eQZKPPKvu/fpHdpXARUj1xeVdFi3YFIMOWswqaBd589cpmAMdSSTryI9iw==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
@@ -2638,7 +2638,7 @@ packages:
         optional: true
     dependencies:
       '@vue/devtools-api': 6.0.0-beta.21.1
-      typescript: 4.5.5
+      typescript: 4.6.2
       vue: 3.2.31
       vue-demi: 0.11.4_vue@3.2.31
     dev: true
@@ -2657,7 +2657,7 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /postcss-load-config/3.1.0_ts-node@10.5.0:
+  /postcss-load-config/3.1.0_ts-node@10.7.0:
     resolution: {integrity: sha512-ipM8Ds01ZUophjDTQYSVP70slFSYg3T0/zyfII5vzhN6V57YSxMgG5syXuwi5VtS8wSf3iL30v0uBdoIVx4Q0g==}
     engines: {node: '>= 10'}
     peerDependencies:
@@ -2668,7 +2668,7 @@ packages:
     dependencies:
       import-cwd: 3.0.0
       lilconfig: 2.0.4
-      ts-node: 10.5.0_f94da96e4d78a751cdd66b59796b8fdd
+      ts-node: 10.7.0_045cabcbf8818eda83522fe731c87088
       yaml: 1.10.2
     dev: true
 
@@ -3283,8 +3283,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node/10.5.0_f94da96e4d78a751cdd66b59796b8fdd:
-    resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
+  /ts-node/10.7.0_045cabcbf8818eda83522fe731c87088:
+    resolution: {integrity: sha512-TbIGS4xgJoX2i3do417KSaep1uRAW/Lu+WAL2doDHC0D6ummjirVOXU5/7aiZotbQ5p1Zp9tP7U6cYhA0O7M8A==}
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
@@ -3309,7 +3309,7 @@ packages:
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 4.5.5
+      typescript: 4.6.2
       v8-compile-cache-lib: 3.0.0
       yn: 3.1.1
     dev: true
@@ -3318,7 +3318,7 @@ packages:
     resolution: {integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==}
     dev: true
 
-  /tsup/5.11.13_ts-node@10.5.0+typescript@4.5.5:
+  /tsup/5.11.13_ts-node@10.7.0+typescript@4.6.2:
     resolution: {integrity: sha512-NVMK01gVmojZn7+iZwxRK1CzW2BIabaVMyEjs7Nm9lm4DrSf7IAqs2F3fg0vT7rH72x1cIBsW9U/TlWrCvHVQQ==}
     hasBin: true
     peerDependencies:
@@ -3335,13 +3335,13 @@ packages:
       execa: 5.1.1
       globby: 11.0.4
       joycon: 3.0.1
-      postcss-load-config: 3.1.0_ts-node@10.5.0
+      postcss-load-config: 3.1.0_ts-node@10.7.0
       resolve-from: 5.0.0
       rollup: 2.60.0
       source-map: 0.7.3
       sucrase: 3.20.3
       tree-kill: 1.2.2
-      typescript: 4.5.5
+      typescript: 4.6.2
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -3373,8 +3373,8 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
-  /typescript/4.5.5:
-    resolution: {integrity: sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==}
+  /typescript/4.6.2:
+    resolution: {integrity: sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
