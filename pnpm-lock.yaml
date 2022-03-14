@@ -12,7 +12,7 @@ specifiers:
   expect: ^27.5.1
   lint-staged: ^12.3.5
   minimist: ^1.2.5
-  mocha: ^9.2.1
+  mocha: ^9.2.2
   nyc: ^15.1.0
   pinia: ^2.0.11
   prettier: ^2.5.1
@@ -20,7 +20,7 @@ specifiers:
   source-map-support: ^0.5.21
   ts-debounce: ^4.0.0
   ts-node: ^10.7.0
-  tsup: ^5.11.13
+  tsup: ^5.12.1
   typescript: ^4.6.2
   vue: ^3.2.31
   yorkie: ^2.0.0
@@ -37,7 +37,7 @@ devDependencies:
   expect: 27.5.1
   lint-staged: 12.3.5_enquirer@2.3.6
   minimist: 1.2.5
-  mocha: 9.2.1
+  mocha: 9.2.2
   nyc: 15.1.0
   pinia: 2.0.11_typescript@4.6.2+vue@3.2.31
   prettier: 2.5.1
@@ -45,7 +45,7 @@ devDependencies:
   source-map-support: 0.5.21
   ts-debounce: 4.0.0
   ts-node: 10.7.0_045cabcbf8818eda83522fe731c87088
-  tsup: 5.11.13_ts-node@10.7.0+typescript@4.6.2
+  tsup: 5.12.1_ts-node@10.7.0+typescript@4.6.2
   typescript: 4.6.2
   vue: 3.2.31
   yorkie: 2.0.0
@@ -732,21 +732,6 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-    dev: true
-
-  /chokidar/3.5.2:
-    resolution: {integrity: sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ==}
-    engines: {node: '>= 8.10.0'}
-    dependencies:
-      anymatch: 3.1.2
-      braces: 3.0.2
-      glob-parent: 5.1.2
-      is-binary-path: 2.1.0
-      is-glob: 4.0.3
-      normalize-path: 3.0.0
-      readdirp: 3.6.0
-    optionalDependencies:
-      fsevents: 2.3.2
     dev: true
 
   /chokidar/3.5.3:
@@ -2255,6 +2240,13 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
+  /minimatch/4.2.1:
+    resolution: {integrity: sha512-9Uq1ChtSZO+Mxa/CL1eGizn2vRn3MlLgzhT0Iz8zaY8NdvxvB0d5QdPFmCKf7JKA9Lerx5vRrnwO03jsSfGG9g==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 1.1.11
+    dev: true
+
   /minimist-options/4.1.0:
     resolution: {integrity: sha512-Q4r8ghd80yhO/0j1O3B2BjweX3fiHg9cdOwjJd2J76Q135c+NDxGCqdYKQ1SKBuFfgWbAUzBfvYjPUEeNgqN1A==}
     engines: {node: '>= 6'}
@@ -2268,8 +2260,8 @@ packages:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: true
 
-  /mocha/9.2.1:
-    resolution: {integrity: sha512-T7uscqjJVS46Pq1XDXyo9Uvey9gd3huT/DD9cYBb4K2Xc/vbKRPUWK067bxDQRK0yIz6Jxk73IrnimvASzBNAQ==}
+  /mocha/9.2.2:
+    resolution: {integrity: sha512-L6XC3EdwT6YrIk0yXpavvLkn8h+EU+Y5UcCHKECyMbdUIxyMuZj4bX4U9e1nvnvUUvQVsV2VHQr5zLdcUkhW/g==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
     dependencies:
@@ -2286,9 +2278,9 @@ packages:
       he: 1.2.0
       js-yaml: 4.1.0
       log-symbols: 4.1.0
-      minimatch: 3.0.4
+      minimatch: 4.2.1
       ms: 2.1.3
-      nanoid: 3.2.0
+      nanoid: 3.3.1
       serialize-javascript: 6.0.0
       strip-json-comments: 3.1.1
       supports-color: 8.1.1
@@ -2320,8 +2312,8 @@ packages:
       thenify-all: 1.6.0
     dev: true
 
-  /nanoid/3.2.0:
-    resolution: {integrity: sha512-fmsZYa9lpn69Ad5eDn7FMcnnSR+8R34W9qJEijxYhTbfOWzr22n1QxCMzXLK+ODyW2973V3Fux959iQoUxzUIA==}
+  /nanoid/3.3.1:
+    resolution: {integrity: sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: true
@@ -2676,7 +2668,7 @@ packages:
     resolution: {integrity: sha512-f/ZFyAKh9Dnqytx5X62jgjhhzttjZS7hMsohcI7HEI5tjELX/HxCy3EFhsRxyzGvrzFF+82XPvCS8T9TFleVJw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.2.0
+      nanoid: 3.3.1
       picocolors: 0.2.1
       source-map-js: 0.6.2
     dev: true
@@ -3318,8 +3310,8 @@ packages:
     resolution: {integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==}
     dev: true
 
-  /tsup/5.11.13_ts-node@10.7.0+typescript@4.6.2:
-    resolution: {integrity: sha512-NVMK01gVmojZn7+iZwxRK1CzW2BIabaVMyEjs7Nm9lm4DrSf7IAqs2F3fg0vT7rH72x1cIBsW9U/TlWrCvHVQQ==}
+  /tsup/5.12.1_ts-node@10.7.0+typescript@4.6.2:
+    resolution: {integrity: sha512-vI7E4T6+6n5guQ9UKUOkQmzd1n4V9abGK71lbnzJMLJspbkNby5zlwWvgvHafLdYCb1WXpjFuqqmNLjBA0Wz3g==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1.0
@@ -3329,7 +3321,7 @@ packages:
     dependencies:
       bundle-require: 3.0.4_esbuild@0.14.3
       cac: 6.7.12
-      chokidar: 3.5.2
+      chokidar: 3.5.3
       debug: 4.3.3
       esbuild: 0.14.3
       execa: 5.1.1
