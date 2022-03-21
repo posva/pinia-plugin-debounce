@@ -10,12 +10,12 @@ specifiers:
   esbuild-register: ^3.3.2
   execa: ^6.1.0
   expect: ^27.5.1
-  lint-staged: ^12.3.5
+  lint-staged: ^12.3.7
   minimist: ^1.2.5
   mocha: ^9.2.2
   nyc: ^15.1.0
-  pinia: ^2.0.11
-  prettier: ^2.5.1
+  pinia: ^2.0.12
+  prettier: ^2.6.0
   semver: ^7.3.5
   source-map-support: ^0.5.21
   ts-debounce: ^4.0.0
@@ -35,12 +35,12 @@ devDependencies:
   esbuild-register: 3.3.2
   execa: 6.1.0
   expect: 27.5.1
-  lint-staged: 12.3.5_enquirer@2.3.6
+  lint-staged: 12.3.7_enquirer@2.3.6
   minimist: 1.2.5
   mocha: 9.2.2
   nyc: 15.1.0
-  pinia: 2.0.11_typescript@4.6.2+vue@3.2.31
-  prettier: 2.5.1
+  pinia: 2.0.12_typescript@4.6.2+vue@3.2.31
+  prettier: 2.6.0
   semver: 7.3.5
   source-map-support: 0.5.21
   ts-debounce: 4.0.0
@@ -444,8 +444,8 @@ packages:
       '@vue/shared': 3.2.31
     dev: true
 
-  /@vue/devtools-api/6.0.0-beta.21.1:
-    resolution: {integrity: sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==}
+  /@vue/devtools-api/6.1.3:
+    resolution: {integrity: sha512-79InfO2xHv+WHIrH1bHXQUiQD/wMls9qBk6WVwGCbdwP7/3zINtvqPNMtmSHXsIKjvUAHc8L0ouOj6ZQQRmcXg==}
     dev: true
 
   /@vue/reactivity-transform/3.2.31:
@@ -2035,8 +2035,8 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/12.3.5_enquirer@2.3.6:
-    resolution: {integrity: sha512-oOH36RUs1It7b9U/C7Nl/a0sLfoIBcMB8ramiB3nuJ6brBqzsWiUAFSR5DQ3yyP/OR7XKMpijtgKl2DV1lQ3lA==}
+  /lint-staged/12.3.7_enquirer@2.3.6:
+    resolution: {integrity: sha512-/S4D726e2GIsDVWIk1XGvheCaDm1SJRQp8efamZFWJxQMVEbOwSysp7xb49Oo73KYCdy97mIWinhlxcoNqIfIQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -2050,6 +2050,7 @@ packages:
       micromatch: 4.0.4
       normalize-path: 3.0.0
       object-inspect: 1.12.0
+      pidtree: 0.5.0
       string-argv: 0.3.1
       supports-color: 9.2.1
       yaml: 1.10.2
@@ -2607,6 +2608,12 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
+  /pidtree/0.5.0:
+    resolution: {integrity: sha512-9nxspIM7OpZuhBxPg73Zvyq7j1QMPMPsGKTqRc2XOaFQauDvoNz9fM1Wdkjmeo7l9GXOZiRs97sPkuayl39wjA==}
+    engines: {node: '>=0.10'}
+    hasBin: true
+    dev: true
+
   /pify/2.3.0:
     resolution: {integrity: sha1-7RQaasBDqEnqWISY59yosVMw6Qw=}
     engines: {node: '>=0.10.0'}
@@ -2617,8 +2624,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pinia/2.0.11_typescript@4.6.2+vue@3.2.31:
-    resolution: {integrity: sha512-JzcmnMqu28PNWOjDgEDK6fTrIzX8eQZKPPKvu/fpHdpXARUj1xeVdFi3YFIMOWswqaBd589cpmAMdSSTryI9iw==}
+  /pinia/2.0.12_typescript@4.6.2+vue@3.2.31:
+    resolution: {integrity: sha512-tUeuYGFrLU5irmGyRAIxp35q1OTcZ8sKpGT4XkPeVcG35W4R6cfXDbCGexzmVqH5lTQJJTXXbNGutIu9yS5yew==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -2629,7 +2636,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@vue/devtools-api': 6.0.0-beta.21.1
+      '@vue/devtools-api': 6.1.3
       typescript: 4.6.2
       vue: 3.2.31
       vue-demi: 0.11.4_vue@3.2.31
@@ -2673,8 +2680,8 @@ packages:
       source-map-js: 0.6.2
     dev: true
 
-  /prettier/2.5.1:
-    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+  /prettier/2.6.0:
+    resolution: {integrity: sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
