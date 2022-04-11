@@ -16,7 +16,7 @@ specifiers:
   nyc: ^15.1.0
   pinia: ^2.0.13
   prettier: ^2.6.2
-  semver: ^7.3.5
+  semver: ^7.3.6
   source-map-support: ^0.5.21
   ts-debounce: ^4.0.0
   ts-node: ^10.7.0
@@ -41,7 +41,7 @@ devDependencies:
   nyc: 15.1.0
   pinia: 2.0.13_typescript@4.6.3+vue@3.2.31
   prettier: 2.6.2
-  semver: 7.3.5
+  semver: 7.3.6
   source-map-support: 0.5.21
   ts-debounce: 4.0.0
   ts-node: 10.7.0_ddaac8e123aeb260f586984cee874848
@@ -2207,6 +2207,11 @@ packages:
       yallist: 4.0.0
     dev: true
 
+  /lru-cache/7.8.1:
+    resolution: {integrity: sha512-E1v547OCgJvbvevfjgK9sNKIVXO96NnsTsFPBlg4ZxjhsJSODoH9lk8Bm0OxvHNm6Vm5Yqkl/1fErDxhYL8Skg==}
+    engines: {node: '>=12'}
+    dev: true
+
   /magic-string/0.25.7:
     resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
     dependencies:
@@ -2402,7 +2407,7 @@ packages:
     dependencies:
       hosted-git-info: 4.0.2
       is-core-module: 2.7.0
-      semver: 7.3.5
+      semver: 7.3.6
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -2944,12 +2949,12 @@ packages:
     hasBin: true
     dev: true
 
-  /semver/7.3.5:
-    resolution: {integrity: sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==}
-    engines: {node: '>=10'}
+  /semver/7.3.6:
+    resolution: {integrity: sha512-HZWqcgwLsjaX1HBD31msI/rXktuIhS+lWvdE4kN9z+8IVT4Itc7vqU2WvYsyD6/sjYCt4dEKH/m1M3dwI9CC5w==}
+    engines: {node: ^10.0.0 || ^12.0.0 || ^14.0.0 || >=16.0.0}
     hasBin: true
     dependencies:
-      lru-cache: 6.0.0
+      lru-cache: 7.8.1
     dev: true
 
   /serialize-javascript/6.0.0:
