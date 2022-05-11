@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+
     "target": "esnext",
     "module": "esnext",
     "noEmit": true,
@@ -8,8 +11,7 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
 
-    "rootDir": ".",
-    "baseUrl": "."
+    "types": ["vitest/globals"]
   },
   "include": ["src"]
 }

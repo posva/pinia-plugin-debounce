@@ -9,3 +9,4 @@ package-lock.json
 yarn.lock
 .DS_Store
 .pnpm-debug.log
+tsconfig.tsbuildinfo
