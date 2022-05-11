@@ -43,12 +43,37 @@ defineStore('id', {
     someSearch() {
       // ...
     },
+    other() {
+      // ...
+    },
   },
   debounce: {
     // debounce all `someSearch` calls by 300ms
     someSearch: 300,
+    // you can pass an array of arguments if your debounce implementation accepts extra arguments
+    someSearch: [
+      300,
+      {
+        // options passed to debounce
+        isImmediate: true,
+      },
+    ],
   },
 })
+```
+
+### Extended TypeScript support
+
+By default, extra arguments passed to your `debounce` implementation are not typed. This can be changed by extending the `Config` interface in any of your ts files:
+
+```ts
+import { debounce } from 'ts-debounce'
+
+declare module '@pinia/plugin-debounce' {
+  export interface Config {
+    Debounce: typeof debounce
+  }
+}
 ```
 
 ## License
