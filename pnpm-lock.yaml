@@ -4,7 +4,7 @@ specifiers:
   '@istanbuljs/nyc-config-typescript': ^1.0.2
   '@types/mocha': ^9.1.1
   '@types/node': ^16.11.34
-  chalk: ^4.1.2
+  chalk: ^5.0.1
   conventional-changelog-cli: ^2.2.2
   enquirer: ^2.3.6
   esbuild-register: ^3.3.2
@@ -29,7 +29,7 @@ devDependencies:
   '@istanbuljs/nyc-config-typescript': 1.0.2_nyc@15.1.0
   '@types/mocha': 9.1.1
   '@types/node': 16.11.34
-  chalk: 4.1.2
+  chalk: 5.0.1
   conventional-changelog-cli: 2.2.2
   enquirer: 2.3.6
   esbuild-register: 3.3.2
@@ -734,6 +734,11 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: true
+
+  /chalk/5.0.1:
+    resolution: {integrity: sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
   /chokidar/3.5.3:
