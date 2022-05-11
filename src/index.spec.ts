@@ -40,6 +40,7 @@ describe('Pinia Debounce', () => {
 
   beforeEach(() => {
     const pinia = createPinia()
+    // @ts-expect-error: pinia._p is an internal property
     pinia._p.push(PiniaDebounce(debounce))
     setActivePinia(pinia)
   })
@@ -105,6 +106,22 @@ describe('Pinia Debounce', () => {
     expect(store.count).toBe(1)
   })
 
+  // describe('debounce plugin options', () => {
+  //   let debounce:
+  //   beforeEach(() => {
+  //     const pinia = createPinia()
+  //     // @ts-expect-error: pinia._p is an internal property
+  //     pinia._p.push(PiniaDebounce(debounce))
+  //     setActivePinia(pinia)
+  //   })
+  // })
+})
+
+function tds(fn: () => void) {
+  return fn
+}
+
+tds(() => {
   // ts tests
   defineStore('id', {
     actions: {},
@@ -124,6 +141,18 @@ describe('Pinia Debounce', () => {
     actions: { two() {} },
     debounce: {
       one: 0,
+    },
+  })
+
+  // it passes options
+  defineStore('id', {
+    actions: {
+      a() {},
+      b() {},
+    },
+    debounce: {
+      a: [20],
+      b: [20, {}],
     },
   })
 })
