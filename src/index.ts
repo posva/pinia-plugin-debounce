@@ -28,10 +28,11 @@ export const PiniaDebounce =
     const { debounce: debounceOptions } = options
     if (debounceOptions) {
       return Object.keys(debounceOptions).reduce((debouncedActions, action) => {
-        debouncedActions[action] = debounce(
-          store[action],
-          // @ts-ignore: this fails in build...
-          debounceOptions[action]!
+        const args = [store[action]].concat(debounceOptions[action])
+        debouncedActions[action] = debounce.apply(
+          null,
+          // @ts-expect-error: wrong array type
+          args
         )
         return debouncedActions
       }, {} as Record<string, (...args: any[]) => any>)
@@ -55,6 +56,41 @@ declare module 'pinia' {
      * })
      * ```
      */
-    debounce?: Partial<Record<keyof StoreActions<Store>, number>>
+    debounce?: Partial<
+      Record<
+        keyof StoreActions<Store>,
+        | number
+        | (Config extends Record<'Debounce', infer DebounceFn>
+            ? _ParamsAfterNumber<DebounceFn>
+            : [number, ...any[]])
+      >
+    >
   }
+}
+
+export type _ParamsAfterNumber<F> = F extends (
+  fn: (...args: any[]) => any,
+  time: number,
+  ...rest: infer Rest
+) => any
+  ? [number, ...Rest]
+  : [number, ...any[]]
+
+/**
+ * Allows you to provide a type for your debounce function so you can pass extra arguments to it in a type safe way.
+ *
+ * @example
+ *
+ * ```ts
+ * // Add this to your main.ts or any other ts file
+ * import { debounce } from 'ts-debounce'
+ * declare module '@pinia/plugin-debounce' {
+ *   export interface Config {
+ *     Debounce: typeof debounce
+ *   }
+ * }
+ * ```
+ */
+export interface Config {
+  // Debounce: any
 }

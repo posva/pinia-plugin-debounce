@@ -1,10 +1,17 @@
 import expect from 'expect'
-import { PiniaDebounce } from './index'
+import { PiniaDebounce, _ParamsAfterNumber } from './index'
 import { debounce } from 'ts-debounce'
 import { createPinia, defineStore, setActivePinia } from 'pinia'
 import { ref } from 'vue'
+import { SpyInstance } from 'vitest'
 
 const delay = (t: number) => new Promise((r) => setTimeout(r, t))
+
+declare module './index' {
+  interface Config {
+    Debounce: typeof debounce
+  }
+}
 
 describe('Pinia Debounce', () => {
   const useOptionsStore = defineStore('one', {
@@ -106,15 +113,49 @@ describe('Pinia Debounce', () => {
     expect(store.count).toBe(1)
   })
 
-  // describe('debounce plugin options', () => {
-  //   let debounce:
-  //   beforeEach(() => {
-  //     const pinia = createPinia()
-  //     // @ts-expect-error: pinia._p is an internal property
-  //     pinia._p.push(PiniaDebounce(debounce))
-  //     setActivePinia(pinia)
-  //   })
-  // })
+  describe('debounce function parameters', () => {
+    let debounce: SpyInstance<any[], any>
+
+    beforeEach(() => {
+      const pinia = createPinia()
+      debounce = vi.fn()
+      // @ts-expect-error: pinia._p is an internal property
+      pinia._p.push(
+        // @ts-expect-error: spy instance
+        PiniaDebounce(debounce)
+      )
+      setActivePinia(pinia)
+    })
+
+    it('can be passed without options', () => {
+      defineStore('id', {
+        actions: { a() {} },
+        debounce: { a: 0 },
+      })()
+      expect(debounce).toBeCalledTimes(1)
+      expect(debounce).toHaveBeenLastCalledWith(expect.any(Function), 0)
+    })
+
+    it('can be passed as array', () => {
+      defineStore('id', {
+        actions: { a() {} },
+        debounce: { a: [0] },
+      })()
+      expect(debounce).toBeCalledTimes(1)
+      expect(debounce).toHaveBeenLastCalledWith(expect.any(Function), 0)
+    })
+
+    it('passes extra args', () => {
+      defineStore('id', {
+        actions: { a() {} },
+        debounce: { a: [0, { isImmediate: true }] },
+      })()
+      expect(debounce).toBeCalledTimes(1)
+      expect(debounce).toHaveBeenLastCalledWith(expect.any(Function), 0, {
+        isImmediate: true,
+      })
+    })
+  })
 })
 
 function tds(fn: () => void) {
@@ -122,6 +163,9 @@ function tds(fn: () => void) {
 }
 
 tds(() => {
+  // can have other options
+  PiniaDebounce((fn: Function, time: number, options?: string) => {})
+
   // ts tests
   defineStore('id', {
     actions: {},
@@ -152,7 +196,12 @@ tds(() => {
     },
     debounce: {
       a: [20],
-      b: [20, {}],
+      b: [
+        20,
+        {
+          isImmediate: true,
+        },
+      ],
     },
   })
 })
