@@ -18,7 +18,7 @@ specifiers:
   source-map-support: ^0.5.21
   ts-debounce: ^4.0.0
   ts-node: ^10.8.0
-  tsup: ^5.12.9
+  tsup: ^6.0.1
   typescript: ^4.7.2
   vitest: ^0.13.0
   vue: ^3.2.36
@@ -42,7 +42,7 @@ devDependencies:
   source-map-support: 0.5.21
   ts-debounce: 4.0.0
   ts-node: 10.8.0_e54576a33e16b25f43fcd3617c6c86ca
-  tsup: 5.12.9_ts-node@10.8.0+typescript@4.7.2
+  tsup: 6.0.1_ts-node@10.8.0+typescript@4.7.2
   typescript: 4.7.2
   vitest: 0.13.0_c8@7.11.3
   vue: 3.2.36
@@ -2869,8 +2869,9 @@ packages:
     resolution: {integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==}
     dev: true
 
-  /tsup/5.12.9_ts-node@10.8.0+typescript@4.7.2:
-    resolution: {integrity: sha512-dUpuouWZYe40lLufo64qEhDpIDsWhRbr2expv5dHEMjwqeKJS2aXA/FPqs1dxO4T6mBojo7rvo3jP9NNzaKyDg==}
+  /tsup/6.0.1_ts-node@10.8.0+typescript@4.7.2:
+    resolution: {integrity: sha512-2Pl1YkEEvzfg4aYgwUILaHV0wwZQKO7mNHMQChyzdCNlQqf11eug7gWk86XCb3CvRofCXBX87x73BTGjyS3cOQ==}
+    engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
       '@swc/core': ^1
