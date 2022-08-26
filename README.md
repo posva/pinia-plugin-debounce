@@ -62,6 +62,25 @@ defineStore('id', {
 })
 ```
 
+For setup stores, options are in a second arugment:
+
+```js
+defineStore(
+  'id',
+  () => {
+    // ...the store
+
+    return { someSearch }
+  },
+  {
+    debounce: {
+      // debounce all `someSearch` calls by 300ms
+      someSearch: 300,
+    },
+  }
+)
+```
+
 ### Extended TypeScript support
 
 By default, extra arguments passed to your `debounce` implementation are not typed. This can be changed by extending the `Config` interface in any of your ts files:
