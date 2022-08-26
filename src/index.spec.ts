@@ -1,4 +1,3 @@
-import expect from 'expect'
 import { PiniaDebounce, _ParamsAfterNumber } from './index'
 import { debounce } from 'ts-debounce'
 import { createPinia, defineStore, setActivePinia } from 'pinia'
