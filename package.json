@@ -51,7 +51,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^16.18.3",
+    "@types/node": "^18.11.9",
     "@vitest/coverage-c8": "^0.25.3",
     "chalk": "^5.1.2",
     "conventional-changelog-cli": "^2.2.2",
