@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/node': ^18.11.9
+  '@types/node': ^18.11.10
   '@vitest/coverage-c8': ^0.25.3
   chalk: ^5.1.2
   conventional-changelog-cli: ^2.2.2
   enquirer: ^2.3.6
   execa: ^6.1.0
-  lint-staged: ^13.0.4
+  lint-staged: ^13.1.0
   minimist: ^1.2.7
   pinia: ^2.0.27
   prettier: ^2.8.0
@@ -21,13 +21,13 @@ specifiers:
   yorkie: ^2.0.0
 
 devDependencies:
-  '@types/node': 18.11.9
+  '@types/node': 18.11.10
   '@vitest/coverage-c8': 0.25.3
   chalk: 5.1.2
   conventional-changelog-cli: 2.2.2
   enquirer: 2.3.6
   execa: 6.1.0
-  lint-staged: 13.0.4_enquirer@2.3.6
+  lint-staged: 13.1.0_enquirer@2.3.6
   minimist: 1.2.7
   pinia: 2.0.27_mgnvym7yiazkylwwogi5r767ue
   prettier: 2.8.0
@@ -166,8 +166,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.11.9:
-    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
+  /@types/node/18.11.10:
+    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -1766,8 +1766,8 @@ packages:
     resolution: {integrity: sha512-8ZmlJFVK9iCmtLz19HpSsR8HaAMWBT284VMNednLwlIMDP2hJDCIhUp0IZ2xUcZ+Ob6BM0VvCSJwzASDM45NLQ==}
     dev: true
 
-  /lint-staged/13.0.4_enquirer@2.3.6:
-    resolution: {integrity: sha512-HxlHCXoYRsq9QCby5wFozmZW00hMs/9e3l+/dz6Qr8Kle4UH0kJTdABAbqhzG+3pcG6QjL9kz7NgGBfph+a5dw==}
+  /lint-staged/13.1.0_enquirer@2.3.6:
+    resolution: {integrity: sha512-pn/sR8IrcF/T0vpWLilih8jmVouMlxqXxKuAojmbiGX5n/gDnz+abdPptlj0vYnbfE0SQNl3CY/HwtM0+yfOVQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -3005,7 +3005,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.3
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.11.9
+      '@types/node': 18.11.10
       acorn: 8.8.0
       acorn-walk: 8.2.0
       chai: 4.3.6
