@@ -10,7 +10,7 @@ specifiers:
   lint-staged: ^13.1.0
   minimist: ^1.2.7
   pinia: ^2.0.28
-  prettier: ^2.8.1
+  prettier: ^2.8.2
   semver: ^7.3.8
   source-map-support: ^0.5.21
   ts-debounce: ^4.0.0
@@ -30,7 +30,7 @@ devDependencies:
   lint-staged: 13.1.0_enquirer@2.3.6
   minimist: 1.2.7
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
-  prettier: 2.8.1
+  prettier: 2.8.2
   semver: 7.3.8
   source-map-support: 0.5.21
   ts-debounce: 4.0.0
@@ -2329,8 +2329,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /prettier/2.8.1:
-    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
+  /prettier/2.8.2:
+    resolution: {integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
