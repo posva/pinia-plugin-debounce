@@ -1,6 +1,6 @@
 {
   "name": "@pinia/plugin-debounce",
-  "packageManager": "pnpm@7.21.0",
+  "packageManager": "pnpm@7.23.0",
   "version": "0.1.0",
   "description": "Debounce any action in your pinia 🍍 store!",
   "publishConfig": {
@@ -60,7 +60,7 @@
     "lint-staged": "^13.1.0",
     "minimist": "^1.2.7",
     "pinia": "^2.0.28",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "semver": "^7.3.8",
     "source-map-support": "^0.5.21",
     "ts-debounce": "^4.0.0",
