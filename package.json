@@ -1,6 +1,6 @@
 {
   "name": "@pinia/plugin-debounce",
-  "packageManager": "pnpm@7.29.1",
+  "packageManager": "pnpm@7.30.0",
   "version": "0.1.0",
   "description": "Debounce any action in your pinia 🍍 store!",
   "publishConfig": {
@@ -51,12 +51,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.15.1",
-    "@vitest/coverage-c8": "^0.29.2",
+    "@types/node": "^18.15.3",
+    "@vitest/coverage-c8": "^0.29.3",
     "chalk": "^5.2.0",
     "conventional-changelog-cli": "^2.2.2",
     "enquirer": "^2.3.6",
-    "execa": "^7.1.0",
+    "execa": "^7.1.1",
     "lint-staged": "^13.2.0",
     "minimist": "^1.2.8",
     "pinia": "^2.0.33",
@@ -64,9 +64,9 @@
     "semver": "^7.3.8",
     "source-map-support": "^0.5.21",
     "ts-debounce": "^4.0.0",
-    "tsup": "^6.6.3",
+    "tsup": "^6.7.0",
     "typescript": "~4.9.5",
-    "vitest": "^0.29.2",
+    "vitest": "^0.29.3",
     "vue": "^3.2.47",
     "yorkie": "^2.0.0"
   },
