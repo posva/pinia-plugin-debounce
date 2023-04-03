@@ -15,7 +15,7 @@ specifiers:
   source-map-support: ^0.5.21
   ts-debounce: ^4.0.0
   tsup: ^6.7.0
-  typescript: ~4.9.5
+  typescript: ~5.0.3
   vitest: ^0.29.8
   vue: ^3.2.47
   yorkie: ^2.0.0
@@ -29,13 +29,13 @@ devDependencies:
   execa: 7.1.1
   lint-staged: 13.2.0_enquirer@2.3.6
   minimist: 1.2.8
-  pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
+  pinia: 2.0.33_dtiidk7kpxlb6f6tlcun7ghfqm
   prettier: 2.8.7
   semver: 7.3.8
   source-map-support: 0.5.21
   ts-debounce: 4.0.0
-  tsup: 6.7.0_typescript@4.9.5
-  typescript: 4.9.5
+  tsup: 6.7.0_typescript@5.0.3
+  typescript: 5.0.3
   vitest: 0.29.8
   vue: 3.2.47
   yorkie: 2.0.0
@@ -2320,7 +2320,7 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pinia/2.0.33_hmuptsblhheur2tugfgucj7gc4:
+  /pinia/2.0.33_dtiidk7kpxlb6f6tlcun7ghfqm:
     resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
@@ -2333,7 +2333,7 @@ packages:
         optional: true
     dependencies:
       '@vue/devtools-api': 6.5.0
-      typescript: 4.9.5
+      typescript: 5.0.3
       vue: 3.2.47
       vue-demi: 0.13.11_vue@3.2.47
     dev: true
@@ -2955,7 +2955,7 @@ packages:
     resolution: {integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==}
     dev: true
 
-  /tsup/6.7.0_typescript@4.9.5:
+  /tsup/6.7.0_typescript@5.0.3:
     resolution: {integrity: sha512-L3o8hGkaHnu5TdJns+mCqFsDBo83bJ44rlK7e6VdanIvpea4ArPcU3swWGsLVbXak1PqQx/V+SSmFPujBK+zEQ==}
     engines: {node: '>=14.18'}
     hasBin: true
@@ -2985,7 +2985,7 @@ packages:
       source-map: 0.8.0-beta.0
       sucrase: 3.20.3
       tree-kill: 1.2.2
-      typescript: 4.9.5
+      typescript: 5.0.3
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -3016,9 +3016,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /typescript/4.9.5:
-    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
-    engines: {node: '>=4.2.0'}
+  /typescript/5.0.3:
+    resolution: {integrity: sha512-xv8mOEDnigb/tN9PSMTwSEqAnUvkoXMQlicOb0IUVDBSQCgBSaAAROUZYy2IcUy5qU6XajK5jjjO7TMWqBTKZA==}
+    engines: {node: '>=12.20'}
     hasBin: true
     dev: true
 
