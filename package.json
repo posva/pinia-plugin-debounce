@@ -56,7 +56,7 @@
     "chalk": "^5.2.0",
     "conventional-changelog-cli": "^2.2.2",
     "enquirer": "^2.3.6",
-    "execa": "^7.1.1",
+    "execa": "^8.0.1",
     "lint-staged": "^15.1.0",
     "minimist": "^1.2.8",
     "pinia": "^2.1.3",
