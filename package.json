@@ -46,13 +46,7 @@
     "build": "tsup"
   },
   "files": [
-    "dist/*.js",
-    "dist/*.cjs",
-    "dist/*.mjs",
-    "dist/*.map",
-    "dist/*.d.ts",
-    "dist/*.d.mts",
-    "dist/*.d.cts",
+    "dist",
     "LICENSE",
     "README.md"
   ],
