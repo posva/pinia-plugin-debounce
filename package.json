@@ -1,7 +1,7 @@
 {
   "name": "@pinia/plugin-debounce",
   "packageManager": "pnpm@8.11.0",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Debounce any action in your pinia 🍍 store!",
   "publishConfig": {
