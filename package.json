@@ -2,18 +2,32 @@
   "name": "@pinia/plugin-debounce",
   "packageManager": "pnpm@8.11.0",
   "version": "0.1.0",
+  "type": "module",
   "description": "Debounce any action in your pinia 🍍 store!",
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "unpkg": "dist/index.global.js",
   "jsdelivr": "dist/index.global.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
+    ".": {
+      "types": {
+        "require": "./dist/index.d.cts",
+        "import": "./dist/index.d.ts"
+      },
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*"
+      ]
+    }
   },
   "sideEffects": false,
   "funding": "https://github.com/sponsors/posva",
@@ -30,14 +44,16 @@
     "lint:fix": "pnpm run lint --write",
     "test:types": "tsc --build ./tsconfig.json",
     "test:cov": "vitest run --coverage",
-    "build": "pnpm build:esm & pnpm build:iife & wait",
-    "build:esm": "tsup src/index.ts --format esm,cjs --dts --target es2020",
-    "build:iife": "tsup src/index.ts --format iife --minify --global-name PiniaDebounce --target es2020"
+    "build": "tsup"
   },
   "files": [
     "dist/*.js",
+    "dist/*.cjs",
     "dist/*.mjs",
+    "dist/*.map",
     "dist/*.d.ts",
+    "dist/*.d.mts",
+    "dist/*.d.cts",
     "LICENSE",
     "README.md"
   ],
@@ -64,7 +80,7 @@
     "semver": "^7.5.4",
     "source-map-support": "^0.5.21",
     "ts-debounce": "^4.0.0",
-    "tsup": "^6.7.0",
+    "tsup": "^8.0.1",
     "typescript": "~5.3.2",
     "vitest": "^0.34.6",
     "vue": "^3.3.9",
