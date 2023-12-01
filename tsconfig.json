@@ -2,7 +2,6 @@
   "compilerOptions": {
     "rootDir": ".",
     "baseUrl": ".",
-
     "target": "esnext",
     "module": "esnext",
     "noEmit": true,
@@ -10,8 +9,9 @@
     "composite": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-
-    "types": ["vitest/globals"]
+    "skipLibCheck": true,
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }

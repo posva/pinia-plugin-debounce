@@ -1,8 +1,8 @@
-import { PiniaDebounce, _ParamsAfterNumber } from './index'
+import { PiniaDebounce } from './index'
 import { debounce } from 'ts-debounce'
 import { createPinia, defineStore, setActivePinia } from 'pinia'
 import { ref } from 'vue'
-import { SpyInstance } from 'vitest'
+import { type SpyInstance, describe, it, beforeEach, expect, vi } from 'vitest'
 
 const delay = (t: number) => new Promise((r) => setTimeout(r, t))
 
