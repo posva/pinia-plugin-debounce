@@ -27,15 +27,18 @@ export const PiniaDebounce =
   ({ options, store }: PiniaPluginContext) => {
     const { debounce: debounceOptions } = options
     if (debounceOptions) {
-      return Object.keys(debounceOptions).reduce((debouncedActions, action) => {
-        const args = [store[action]].concat(debounceOptions[action])
-        debouncedActions[action] = debounce.apply(
-          null,
-          // @ts-expect-error: wrong array type
-          args
-        )
-        return debouncedActions
-      }, {} as Record<string, (...args: any[]) => any>)
+      return Object.keys(debounceOptions).reduce(
+        (debouncedActions, action) => {
+          const args = [store[action]].concat(debounceOptions[action])
+          debouncedActions[action] = debounce.apply(
+            null,
+            // @ts-expect-error: wrong array type
+            args
+          )
+          return debouncedActions
+        },
+        {} as Record<string, (...args: any[]) => any>
+      )
     }
   }
 
