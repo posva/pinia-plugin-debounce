@@ -2,8 +2,6 @@
 
 Contributions are welcome and will be fully credited!
 
-We accept contributions via Pull Requests on [Github](https://github.com/{{ githubAccount }}/{{ name }}).
-
 ## Pull Requests
 
 Here are some guidelines to make the process smoother:
