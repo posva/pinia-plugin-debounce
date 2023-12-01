@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.0.0](https://github.com/posva/pinia-plugin-debounce/compare/v0.1.1...v1.0.0) (2023-12-01)
 
+Mark as stable
+
 ### [0.1.1](https://github.com/posva/pinia-plugin-debounce/compare/v0.1.0...v0.1.1) (2023-12-01)
 
 This version is now a module.
