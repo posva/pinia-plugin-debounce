@@ -4,7 +4,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.0.0](https://github.com/posva/pinia-plugin-debounce/compare/v0.1.1...v1.0.0) (2023-12-01)
 
-Mark as stable
+Mark as stable.
+
+BREAKING CHANGES: drop support for Node 10 type resolution. [Upgrade this option to a different one](https://www.typescriptlang.org/tsconfig#moduleResolution).
+
+```diff
 
 ### [0.1.1](https://github.com/posva/pinia-plugin-debounce/compare/v0.1.0...v0.1.1) (2023-12-01)
 
