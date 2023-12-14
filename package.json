@@ -22,13 +22,6 @@
       "import": "./dist/index.js"
     }
   },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*"
-      ]
-    }
-  },
   "sideEffects": false,
   "funding": "https://github.com/sponsors/posva",
   "author": {
