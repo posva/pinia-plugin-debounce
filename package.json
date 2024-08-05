@@ -62,17 +62,17 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.14.13",
+    "@types/node": "^20.14.14",
     "@vitest/coverage-v8": "^1.6.0",
-    "lint-staged": "^15.2.7",
+    "lint-staged": "^15.2.8",
     "pinia": "^2.2.0",
     "prettier": "^3.3.3",
     "standard-version": "^9.5.0",
     "ts-debounce": "^4.0.0",
-    "tsup": "^8.2.3",
+    "tsup": "^8.2.4",
     "typescript": "~5.5.4",
     "vitest": "^1.6.0",
-    "vue": "^3.4.34",
+    "vue": "^3.4.35",
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
