@@ -1,6 +1,6 @@
 {
   "name": "@pinia/plugin-debounce",
-  "packageManager": "pnpm@9.15.1",
+  "packageManager": "pnpm@9.15.2",
   "version": "1.0.1",
   "type": "module",
   "description": "Debounce any action in your pinia 🍍 store!",
@@ -64,7 +64,7 @@
   "devDependencies": {
     "@types/node": "^22.10.2",
     "@vitest/coverage-v8": "^1.6.0",
-    "lint-staged": "^15.2.11",
+    "lint-staged": "^15.3.0",
     "pinia": "^2.3.0",
     "prettier": "^3.4.2",
     "standard-version": "^9.5.0",
