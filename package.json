@@ -62,11 +62,11 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.13.4",
+    "@types/node": "^22.13.5",
     "@vitest/coverage-v8": "^1.6.1",
     "lint-staged": "^15.4.3",
     "pinia": "^3.0.1",
-    "prettier": "^3.5.1",
+    "prettier": "^3.5.2",
     "standard-version": "^9.5.0",
     "ts-debounce": "^4.0.0",
     "tsup": "^8.3.6",
