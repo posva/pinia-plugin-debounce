@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: ^22.15.32
-        version: 22.15.32
+        specifier: ^22.15.34
+        version: 22.15.34
       '@vitest/coverage-v8':
         specifier: ^1.6.1
-        version: 1.6.1(vitest@1.6.1(@types/node@22.15.32))
+        version: 1.6.1(vitest@1.6.1(@types/node@22.15.34))
       lint-staged:
         specifier: ^16.1.2
         version: 16.1.2
@@ -21,8 +21,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3))
       prettier:
-        specifier: ^3.6.0
-        version: 3.6.0
+        specifier: ^3.6.2
+        version: 3.6.2
       standard-version:
         specifier: ^9.5.0
         version: 9.5.0
@@ -37,7 +37,7 @@ importers:
         version: 5.8.3
       vitest:
         specifier: ^1.6.1
-        version: 1.6.1(@types/node@22.15.32)
+        version: 1.6.1(@types/node@22.15.34)
       vue:
         specifier: ^3.5.17
         version: 3.5.17(typescript@5.8.3)
@@ -610,8 +610,8 @@ packages:
   '@types/minimist@1.2.5':
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
 
-  '@types/node@22.15.32':
-    resolution: {integrity: sha512-3jigKqgSjsH6gYZv2nEsqdXfZqIFGAV36XYYjf9KGZ3PSG+IhLecqPnI310RvjutyMwifE2hhhNEklOUrvx/wA==}
+  '@types/node@22.15.34':
+    resolution: {integrity: sha512-8Y6E5WUupYy1Dd0II32BsWAx5MWdcnRd8L84Oys3veg1YrYtNtzgO4CFhiBg6MDSjk7Ay36HYOnU7/tuOzIzcw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1676,8 +1676,8 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier@3.6.0:
-    resolution: {integrity: sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2561,13 +2561,13 @@ snapshots:
 
   '@types/minimist@1.2.5': {}
 
-  '@types/node@22.15.32':
+  '@types/node@22.15.34':
     dependencies:
       undici-types: 6.21.0
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@vitest/coverage-v8@1.6.1(vitest@1.6.1(@types/node@22.15.32))':
+  '@vitest/coverage-v8@1.6.1(vitest@1.6.1(@types/node@22.15.34))':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@bcoe/v8-coverage': 0.2.3
@@ -2582,7 +2582,7 @@ snapshots:
       std-env: 3.5.0
       strip-literal: 2.0.0
       test-exclude: 6.0.0
-      vitest: 1.6.1(@types/node@22.15.32)
+      vitest: 1.6.1(@types/node@22.15.34)
     transitivePeerDependencies:
       - supports-color
 
@@ -3707,7 +3707,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier@3.6.0: {}
+  prettier@3.6.2: {}
 
   pretty-format@29.7.0:
     dependencies:
@@ -4125,13 +4125,13 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-node@1.6.1(@types/node@22.15.32):
+  vite-node@1.6.1(@types/node@22.15.34):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       pathe: 1.1.1
       picocolors: 1.1.1
-      vite: 5.0.4(@types/node@22.15.32)
+      vite: 5.0.4(@types/node@22.15.34)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4142,16 +4142,16 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.0.4(@types/node@22.15.32):
+  vite@5.0.4(@types/node@22.15.34):
     dependencies:
       esbuild: 0.19.8
       postcss: 8.5.3
       rollup: 4.24.2
     optionalDependencies:
-      '@types/node': 22.15.32
+      '@types/node': 22.15.34
       fsevents: 2.3.3
 
-  vitest@1.6.1(@types/node@22.15.32):
+  vitest@1.6.1(@types/node@22.15.34):
     dependencies:
       '@vitest/expect': 1.6.1
       '@vitest/runner': 1.6.1
@@ -4170,11 +4170,11 @@ snapshots:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.3
-      vite: 5.0.4(@types/node@22.15.32)
-      vite-node: 1.6.1(@types/node@22.15.32)
+      vite: 5.0.4(@types/node@22.15.34)
+      vite-node: 1.6.1(@types/node@22.15.34)
       why-is-node-running: 2.2.2
     optionalDependencies:
-      '@types/node': 22.15.32
+      '@types/node': 22.15.34
     transitivePeerDependencies:
       - less
       - lightningcss
