@@ -62,7 +62,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.15.34",
+    "@types/node": "^22.16.0",
     "@vitest/coverage-v8": "^1.6.1",
     "lint-staged": "^16.1.2",
     "pinia": "^3.0.3",
