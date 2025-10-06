@@ -9,17 +9,17 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: ^22.18.6
-        version: 22.18.6
+        specifier: ^22.18.8
+        version: 22.18.8
       '@vitest/coverage-v8':
         specifier: ^1.6.1
-        version: 1.6.1(vitest@1.6.1(@types/node@22.18.6))
+        version: 1.6.1(vitest@1.6.1(@types/node@22.18.8))
       lint-staged:
         specifier: ^16.2.3
         version: 16.2.3
       pinia:
         specifier: ^3.0.3
-        version: 3.0.3(typescript@5.9.2)(vue@3.5.22(typescript@5.9.2))
+        version: 3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
@@ -31,16 +31,16 @@ importers:
         version: 4.0.0
       tsup:
         specifier: ^8.5.0
-        version: 8.5.0(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.1)
+        version: 8.5.0(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.1)
       typescript:
-        specifier: ~5.9.2
-        version: 5.9.2
+        specifier: ~5.9.3
+        version: 5.9.3
       vitest:
         specifier: ^1.6.1
-        version: 1.6.1(@types/node@22.18.6)
+        version: 1.6.1(@types/node@22.18.8)
       vue:
         specifier: ^3.5.22
-        version: 3.5.22(typescript@5.9.2)
+        version: 3.5.22(typescript@5.9.3)
       yorkie:
         specifier: ^2.0.0
         version: 2.0.0
@@ -613,8 +613,8 @@ packages:
   '@types/minimist@1.2.5':
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
 
-  '@types/node@22.18.6':
-    resolution: {integrity: sha512-r8uszLPpeIWbNKtvWRt/DbVi5zbqZyj1PTmhRMqBMvDnaz1QpmSKujUtJLrqGZeoM8v72MfYggDceY4K1itzWQ==}
+  '@types/node@22.18.8':
+    resolution: {integrity: sha512-pAZSHMiagDR7cARo/cch1f3rXy0AEXwsVsVH09FcyeJVAzCnGgmYis7P3JidtTUjyadhTeSo8TgRPswstghDaw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2050,8 +2050,8 @@ packages:
   typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
 
-  typescript@5.9.2:
-    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2562,13 +2562,13 @@ snapshots:
 
   '@types/minimist@1.2.5': {}
 
-  '@types/node@22.18.6':
+  '@types/node@22.18.8':
     dependencies:
       undici-types: 6.21.0
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@vitest/coverage-v8@1.6.1(vitest@1.6.1(@types/node@22.18.6))':
+  '@vitest/coverage-v8@1.6.1(vitest@1.6.1(@types/node@22.18.8))':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@bcoe/v8-coverage': 0.2.3
@@ -2583,7 +2583,7 @@ snapshots:
       std-env: 3.5.0
       strip-literal: 2.0.0
       test-exclude: 6.0.0
-      vitest: 1.6.1(@types/node@22.18.6)
+      vitest: 1.6.1(@types/node@22.18.8)
     transitivePeerDependencies:
       - supports-color
 
@@ -2680,11 +2680,11 @@ snapshots:
       '@vue/shared': 3.5.22
       csstype: 3.1.3
 
-  '@vue/server-renderer@3.5.22(vue@3.5.22(typescript@5.9.2))':
+  '@vue/server-renderer@3.5.22(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@vue/compiler-ssr': 3.5.22
       '@vue/shared': 3.5.22
-      vue: 3.5.22(typescript@5.9.2)
+      vue: 3.5.22(typescript@5.9.3)
 
   '@vue/shared@3.5.22': {}
 
@@ -3665,12 +3665,12 @@ snapshots:
 
   pify@3.0.0: {}
 
-  pinia@3.0.3(typescript@5.9.2)(vue@3.5.22(typescript@5.9.2)):
+  pinia@3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@vue/devtools-api': 7.7.2
-      vue: 3.5.22(typescript@5.9.2)
+      vue: 3.5.22(typescript@5.9.3)
     optionalDependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
 
   pirates@4.0.6: {}
 
@@ -4061,7 +4061,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsup@8.5.0(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.1):
+  tsup@8.5.0(postcss@8.5.6)(typescript@5.9.3)(yaml@2.8.1):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.25.0)
       cac: 6.7.14
@@ -4082,7 +4082,7 @@ snapshots:
       tree-kill: 1.2.2
     optionalDependencies:
       postcss: 8.5.6
-      typescript: 5.9.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - jiti
       - supports-color
@@ -4099,7 +4099,7 @@ snapshots:
 
   typedarray@0.0.6: {}
 
-  typescript@5.9.2: {}
+  typescript@5.9.3: {}
 
   ufo@1.3.2: {}
 
@@ -4117,13 +4117,13 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-node@1.6.1(@types/node@22.18.6):
+  vite-node@1.6.1(@types/node@22.18.8):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       pathe: 1.1.1
       picocolors: 1.1.1
-      vite: 5.0.4(@types/node@22.18.6)
+      vite: 5.0.4(@types/node@22.18.8)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4134,16 +4134,16 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.0.4(@types/node@22.18.6):
+  vite@5.0.4(@types/node@22.18.8):
     dependencies:
       esbuild: 0.19.8
       postcss: 8.5.6
       rollup: 4.24.2
     optionalDependencies:
-      '@types/node': 22.18.6
+      '@types/node': 22.18.8
       fsevents: 2.3.3
 
-  vitest@1.6.1(@types/node@22.18.6):
+  vitest@1.6.1(@types/node@22.18.8):
     dependencies:
       '@vitest/expect': 1.6.1
       '@vitest/runner': 1.6.1
@@ -4162,11 +4162,11 @@ snapshots:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.3
-      vite: 5.0.4(@types/node@22.18.6)
-      vite-node: 1.6.1(@types/node@22.18.6)
+      vite: 5.0.4(@types/node@22.18.8)
+      vite-node: 1.6.1(@types/node@22.18.8)
       why-is-node-running: 2.2.2
     optionalDependencies:
-      '@types/node': 22.18.6
+      '@types/node': 22.18.8
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -4176,15 +4176,15 @@ snapshots:
       - supports-color
       - terser
 
-  vue@3.5.22(typescript@5.9.2):
+  vue@3.5.22(typescript@5.9.3):
     dependencies:
       '@vue/compiler-dom': 3.5.22
       '@vue/compiler-sfc': 3.5.22
       '@vue/runtime-dom': 3.5.22
-      '@vue/server-renderer': 3.5.22(vue@3.5.22(typescript@5.9.2))
+      '@vue/server-renderer': 3.5.22(vue@3.5.22(typescript@5.9.3))
       '@vue/shared': 3.5.22
     optionalDependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
 
   webidl-conversions@4.0.2: {}
 
