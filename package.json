@@ -1,6 +1,6 @@
 {
   "name": "@pinia/plugin-debounce",
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.1",
   "version": "1.0.1",
   "type": "module",
   "description": "Debounce any action in your pinia 🍍 store!",
@@ -66,13 +66,13 @@
     "@vitest/coverage-v8": "^1.6.1",
     "lint-staged": "^16.2.7",
     "pinia": "^3.0.4",
-    "prettier": "^3.8.0",
+    "prettier": "^3.8.1",
     "standard-version": "^9.5.0",
     "ts-debounce": "^4.0.0",
     "tsup": "^8.5.1",
     "typescript": "~5.9.3",
     "vitest": "^1.6.1",
-    "vue": "^3.5.26",
+    "vue": "^3.5.27",
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
