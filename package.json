@@ -45,7 +45,7 @@
     "lint:fix": "pnpm run lint --write",
     "test:types": "tsc --build ./tsconfig.json",
     "test:cov": "vitest run --coverage",
-    "build": "tsup"
+    "build": "tsup && tsc --project tsconfig.dts.json && node -e \"require('fs').copyFileSync('dist/index.d.ts', 'dist/index.d.cts')\""
   },
   "files": [
     "dist",

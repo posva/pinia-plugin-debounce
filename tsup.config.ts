@@ -7,5 +7,4 @@ export default defineConfig({
   clean: true,
   format: ['cjs', 'esm', 'iife'],
   globalName: 'PiniaDebounce',
-  dts: true,
 })
