@@ -27,8 +27,8 @@ importers:
         specifier: ^9.5.0
         version: 9.5.0
       ts-debounce:
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^5.0.0
+        version: 5.0.0
       tsup:
         specifier: ^8.5.1
         version: 8.5.1(postcss@8.5.8)(typescript@5.9.3)(yaml@2.8.2)
@@ -1887,8 +1887,8 @@ packages:
     resolution: {integrity: sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==}
     engines: {node: '>=8'}
 
-  ts-debounce@4.0.0:
-    resolution: {integrity: sha512-+1iDGY6NmOGidq7i7xZGA4cm8DAa6fqdYcvO5Z6yBevH++Bdo9Qt/mN0TzHUgcCcKv1gmh9+W5dHqz8pMWbCbg==}
+  ts-debounce@5.0.0:
+    resolution: {integrity: sha512-u0TCPC1koR5OcYC8hUC9ZisNlkxW87VejeoK+qX2in0grK1Dy0Fjlq9diNwHsFZwbFjM5lCTloRPPrs4TcPPug==}
 
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
@@ -3820,7 +3820,7 @@ snapshots:
 
   trim-newlines@3.0.1: {}
 
-  ts-debounce@4.0.0: {}
+  ts-debounce@5.0.0: {}
 
   ts-interface-checker@0.1.13: {}
 
