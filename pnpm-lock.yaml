@@ -21,8 +21,8 @@ importers:
         specifier: ^3.0.4
         version: 3.0.4(typescript@5.9.3)(vue@3.5.32(typescript@5.9.3))
       prettier:
-        specifier: ^3.8.1
-        version: 3.8.1
+        specifier: ^3.8.2
+        version: 3.8.2
       standard-version:
         specifier: ^9.5.0
         version: 9.5.0
@@ -1568,8 +1568,8 @@ packages:
     resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  prettier@3.8.2:
+    resolution: {integrity: sha512-8c3mgTe0ASwWAJK+78dpviD+A8EqhndQPUBpNUIPt6+xWlIigCwfN01lWr9MAede4uqXGTEKeQWTvzb3vjia0Q==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3496,7 +3496,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier@3.8.1: {}
+  prettier@3.8.2: {}
 
   pretty-format@29.7.0:
     dependencies:
