@@ -68,7 +68,7 @@
     "pinia": "^3.0.4",
     "prettier": "^3.8.2",
     "standard-version": "^9.5.0",
-    "ts-debounce": "^4.0.0",
+    "ts-debounce": "^5.0.0",
     "tsup": "^8.5.1",
     "typescript": "~5.9.3",
     "vitest": "^1.6.1",
