@@ -64,7 +64,7 @@
   "devDependencies": {
     "@types/node": "^24.12.3",
     "@vitest/coverage-v8": "^1.6.1",
-    "lint-staged": "^16.4.0",
+    "lint-staged": "^17.0.4",
     "pinia": "^3.0.4",
     "prettier": "^3.8.3",
     "standard-version": "^9.5.0",
