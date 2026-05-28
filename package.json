@@ -63,7 +63,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^24.12.4",
-    "@vitest/coverage-v8": "^1.6.1",
+    "@vitest/coverage-v8": "^4.1.7",
     "lint-staged": "^17.0.5",
     "pinia": "^3.0.4",
     "prettier": "^3.8.3",
@@ -71,7 +71,7 @@
     "ts-debounce": "^5.0.1",
     "tsup": "^8.5.1",
     "typescript": "~5.9.3",
-    "vitest": "^1.6.1",
+    "vitest": "^4.1.7",
     "vue": "^3.5.34",
     "yorkie": "^2.0.0"
   },
