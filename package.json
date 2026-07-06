@@ -66,7 +66,7 @@
     "@vitest/coverage-v8": "^1.6.1",
     "lint-staged": "^17.0.8",
     "pinia": "^3.0.4",
-    "prettier": "^3.9.1",
+    "prettier": "^3.9.4",
     "standard-version": "^9.5.0",
     "ts-debounce": "^5.0.1",
     "tsup": "^8.5.1",
