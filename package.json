@@ -67,7 +67,7 @@
     "lint-staged": "^17.0.8",
     "pinia": "^3.0.4",
     "prettier": "^3.9.5",
-    "standard-version": "^9.5.0",
+    "commit-and-tag-version": "^9.5.0",
     "ts-debounce": "^5.0.1",
     "tsup": "^8.5.1",
     "typescript": "~5.9.3",
