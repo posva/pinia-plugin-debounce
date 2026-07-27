@@ -64,15 +64,15 @@
   "devDependencies": {
     "@types/node": "^24.13.3",
     "@vitest/coverage-v8": "^1.6.1",
-    "lint-staged": "^17.0.8",
+    "lint-staged": "^17.2.0",
     "pinia": "^3.0.4",
-    "prettier": "^3.9.5",
-    "commit-and-tag-version": "^9.5.0",
+    "prettier": "^3.9.6",
+    "commit-and-tag-version": "^9.6.0",
     "ts-debounce": "^5.0.1",
     "tsup": "^8.5.1",
     "typescript": "~5.9.3",
     "vitest": "^1.6.1",
-    "vue": "^3.5.39",
+    "vue": "^3.5.40",
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
