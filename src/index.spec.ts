@@ -41,7 +41,7 @@ describe('Pinia Debounce', () => {
       debounce: {
         one: 1,
       },
-    }
+    },
   )
 
   beforeEach(() => {

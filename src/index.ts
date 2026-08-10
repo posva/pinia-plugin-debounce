@@ -24,10 +24,7 @@ export interface Debounce {
  */
 export const PiniaDebounce =
   (debounce: Debounce) =>
-  ({
-    options,
-    store,
-  }: PiniaPluginContext): Record<string, (...args: any[]) => any> | undefined => {
+  ({ options, store }: PiniaPluginContext): Record<string, (...args: any[]) => any> | undefined => {
     const { debounce: debounceOptions } = options
     if (debounceOptions) {
       return Object.keys(debounceOptions).reduce(
@@ -36,11 +33,11 @@ export const PiniaDebounce =
           debouncedActions[action] = debounce.apply(
             null,
             // @ts-expect-error: wrong array type
-            args
+            args,
           )
           return debouncedActions
         },
-        {} as Record<string, (...args: any[]) => any>
+        {} as Record<string, (...args: any[]) => any>,
       )
     }
   }

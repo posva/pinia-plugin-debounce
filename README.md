@@ -77,7 +77,7 @@ defineStore(
       // debounce all `someSearch` calls by 300ms
       someSearch: 300,
     },
-  }
+  },
 )
 ```
 
