@@ -1,3 +1,12 @@
+# [2.0.0](https://github.com/posva/pinia-plugin-debounce/compare/v1.0.1...v2.0.0) (2026-08-10)
+
+- build!: replace tsup with tsdown and ship ESM only ([08f3a03](https://github.com/posva/pinia-plugin-debounce/commit/08f3a03420f10982f11b0331908d29ded855913e))
+
+### BREAKING CHANGES
+
+- drops the CJS and IIFE builds. require() and the
+  unpkg/jsdelivr global builds are no longer published.
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
