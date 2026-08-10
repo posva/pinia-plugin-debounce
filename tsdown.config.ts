@@ -12,7 +12,7 @@ const banner = `
 
 const commonOptions = {
   banner,
-  sourcemap: true,
+  sourcemap: false,
   format: ['esm'],
   deps: {
     onlyBundle: [],
