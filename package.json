@@ -30,7 +30,8 @@
     "dev": "vitest",
     "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm run build",
-    "release": "standard-version",
+    "release": "node scripts/release.ts",
+    "size": "size-limit",
     "test": "pnpm run build && pnpm run test:cov && pnpm run test:types",
     "lint": "oxlint ${CI:+--deny-warnings} .",
     "lint:fix": "oxlint --fix .",
@@ -54,15 +55,22 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@posva/prompts": "^2.4.4",
+    "@size-limit/esbuild-why": "^13.0.3",
+    "@size-limit/preset-small-lib": "^13.0.3",
     "@types/node": "^26.2.0",
+    "@types/semver": "^7.8.0",
     "@vitest/coverage-v8": "^4.1.10",
-    "commit-and-tag-version": "^13.1.2",
+    "conventional-changelog": "^8.1.1",
+    "conventional-changelog-angular": "^9.2.1",
     "lint-staged": "^17.3.0",
     "oxfmt": "^0.62.0",
     "oxlint": "^1.77.0",
     "oxlint-plugin-posva": "^0.0.2",
     "pinia": "^4.0.2",
+    "semver": "^7.8.5",
     "simple-git-hooks": "^2.13.1",
+    "size-limit": "^13.0.3",
     "ts-debounce": "^5.0.1",
     "tsdown": "^0.22.14",
     "typescript": "~6.0.3",
@@ -79,6 +87,24 @@
       "oxlint --no-error-on-unmatched-pattern --fix"
     ]
   },
+  "size-limit": [
+    {
+      "name": "everything from source",
+      "path": "src/index.ts",
+      "import": "*",
+      "ignore": [
+        "pinia"
+      ]
+    },
+    {
+      "name": "everything from dist",
+      "path": "dist/index.mjs",
+      "import": "*",
+      "ignore": [
+        "pinia"
+      ]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/posva/pinia-plugin-debounce.git"
