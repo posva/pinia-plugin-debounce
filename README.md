@@ -3,7 +3,7 @@
   Pinia Debounce
 </h1>
 
-<a href="https://npmjs.com/package/@pinia/plugin-debounce">
+<a href="https://npmx.dev/package/@pinia/plugin-debounce">
   <img src="https://badgen.net/npm/v/@pinia/plugin-debounce/latest" alt="npm package">
 </a>
 <a href="https://github.com/posva/pinia-plugin-debounce/actions/workflows/ci.yml/badge.svg">
