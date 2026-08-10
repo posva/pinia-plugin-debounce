@@ -6,7 +6,7 @@
 <a href="https://npmjs.com/package/@pinia/plugin-debounce">
   <img src="https://badgen.net/npm/v/@pinia/plugin-debounce/latest" alt="npm package">
 </a>
-<a href="https://github.com/posva/pinia-plugin-debounce/actions/workflows/test.yml">
+<a href="https://github.com/posva/pinia-plugin-debounce/actions/workflows/ci.yml/badge.svg">
   <img src="https://github.com/posva/pinia-plugin-debounce/workflows/test/badge.svg" alt="build status">
 </a>
 <a href="https://codecov.io/gh/posva/pinia-plugin-debounce">
