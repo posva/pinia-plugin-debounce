@@ -28,6 +28,7 @@
   },
   "scripts": {
     "dev": "vitest",
+    "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm run build",
     "release": "standard-version",
     "test": "pnpm run build && pnpm run test:cov && pnpm run test:types",
@@ -61,23 +62,21 @@
     "oxlint": "^1.77.0",
     "oxlint-plugin-posva": "^0.0.2",
     "pinia": "^4.0.2",
+    "simple-git-hooks": "^2.13.1",
     "ts-debounce": "^5.0.1",
     "tsdown": "^0.22.14",
     "typescript": "~6.0.3",
     "vitest": "^4.1.10",
-    "vue": "^3.5.41",
-    "yorkie": "^2.0.0"
+    "vue": "^3.5.41"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged",
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
     "commit-msg": "node scripts/verifyCommit.js"
   },
   "lint-staged": {
-    "*.?(m)js": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
+    "*": [
+      "oxfmt --no-error-on-unmatched-pattern",
+      "oxlint --no-error-on-unmatched-pattern --fix"
     ]
   },
   "repository": {

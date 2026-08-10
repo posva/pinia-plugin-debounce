@@ -1,24 +1,42 @@
-// Invoked on the commit-msg git hook by yorkie.
+// @ts-check
+import { execFileSync } from 'node:child_process'
+import { readFileSync } from 'node:fs'
+import path from 'node:path'
 
-const chalk = require('chalk')
-const msgPath = process.env.GIT_PARAMS
-const msg = require('fs').readFileSync(msgPath, 'utf-8').trim()
+// Define raw escape codes for colors
+const reset = '\x1B[0m'
+const red = '\x1B[31m'
+const green = '\x1B[32m'
+const bgRedWhite = '\x1B[41m\x1B[37m'
+
+// git passes the message file as the first hook argument, but the
+// simple-git-hooks wrapper does not forward it, so fall back to asking git for
+// the path. `--git-path` resolves correctly in worktrees too, where `.git` is a
+// file pointing at `.git/worktrees/<name>` rather than a plain directory.
+const msgPath =
+  process.argv[2] ??
+  path.resolve(
+    execFileSync('git', ['rev-parse', '--git-path', 'COMMIT_EDITMSG'], {
+      encoding: 'utf-8',
+    }).trim(),
+  )
+const msg = readFileSync(msgPath, 'utf-8').trim()
 
 const commitRE =
-  /^(revert: )?(feat|fix|docs|dx|style|refactor|perf|test|workflow|build|ci|chore|types|wip|release)(\(.+\))?: .{1,50}/
+  /^(?:revert: )?(?:feat|fix|docs|dx|style|refactor|perf|test|workflow|build|ci|chore|types|wip|release)(?:\(.+\))?!?: .{1,50}/
 
 if (!commitRE.test(msg)) {
-  console.log()
   console.error(
-    `  ${chalk.bgRed.white(' ERROR ')} ${chalk.red(`invalid commit message format.`)}\n\n` +
-      chalk.red(
-        `  Proper commit message format is required for automated changelog generation. Examples:\n\n`,
-      ) +
-      `    ${chalk.green(`fix(view): handle keep-alive with aborted navigations`)}\n` +
-      `    ${chalk.green(
-        `fix(view): handle keep-alive with aborted navigations (close #28)`,
-      )}\n\n` +
-      chalk.red(`  See .github/commit-convention.md for more details.\n`),
+    `\n` +
+      `  ${bgRedWhite} ERROR ${reset} ${red}invalid commit message format.${reset}\n\n` +
+      `${msg
+        .split('\n')
+        .map((line) => `    ${line}`)
+        .join('\n')}\n\n` +
+      `${red}  Proper commit message format is required for automated changelog generation. Examples:\n\n` +
+      `    ${green}feat: add disableRoot option${reset}\n` +
+      `    ${green}fix(view): handle keep-alive with aborted navigations (close #28)${reset}\n\n` +
+      `${red}  See .github/commit-convention.md for more details.${reset}\n`,
   )
   process.exit(1)
 }
