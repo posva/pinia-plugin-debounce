@@ -24,7 +24,10 @@ export interface Debounce {
  */
 export const PiniaDebounce =
   (debounce: Debounce) =>
-  ({ options, store }: PiniaPluginContext) => {
+  ({
+    options,
+    store,
+  }: PiniaPluginContext): Record<string, (...args: any[]) => any> | undefined => {
     const { debounce: debounceOptions } = options
     if (debounceOptions) {
       return Object.keys(debounceOptions).reduce(

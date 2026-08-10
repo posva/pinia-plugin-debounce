@@ -10,3 +10,5 @@ yarn.lock
 .DS_Store
 .pnpm-debug.log
 tsconfig.tsbuildinfo
+tsconfig.*.tsbuildinfo
+.tsc-types

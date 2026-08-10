@@ -7,20 +7,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "unpkg": "dist/index.global.js",
-  "jsdelivr": "dist/index.global.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "exports": {
-    ".": {
-      "types": {
-        "require": "./dist/index.d.cts",
-        "import": "./dist/index.d.ts"
-      },
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
-    }
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
   },
   "typesVersions": {
     "*": {
@@ -40,12 +30,12 @@
     "dev": "vitest",
     "prepublishOnly": "pnpm run build",
     "release": "standard-version",
-    "test": "pnpm run test:cov && pnpm run test:types",
+    "test": "pnpm run build && pnpm run test:cov && pnpm run test:types",
     "lint": "prettier -c --parser typescript \"src/**/*.[jt]s?(x)\"",
     "lint:fix": "pnpm run lint --write",
     "test:types": "tsc --build ./tsconfig.json",
     "test:cov": "vitest run --coverage",
-    "build": "tsup"
+    "build": "tsdown"
   },
   "files": [
     "dist",
@@ -69,8 +59,8 @@
     "pinia": "^4.0.2",
     "prettier": "^3.9.6",
     "ts-debounce": "^5.0.1",
-    "tsup": "^8.5.1",
-    "typescript": "~5.9.3",
+    "tsdown": "^0.22.14",
+    "typescript": "~6.0.3",
     "vitest": "^4.1.10",
     "vue": "^3.5.41",
     "yorkie": "^2.0.0"
