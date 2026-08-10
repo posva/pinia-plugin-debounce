@@ -2,7 +2,7 @@ import { PiniaDebounce } from './index'
 import { debounce } from 'ts-debounce'
 import { createPinia, defineStore, setActivePinia } from 'pinia'
 import { ref } from 'vue'
-import { type SpyInstance, describe, it, beforeEach, expect, vi } from 'vitest'
+import { type MockInstance, describe, it, beforeEach, expect, vi } from 'vitest'
 
 const delay = (t: number) => new Promise((r) => setTimeout(r, t))
 
@@ -113,16 +113,13 @@ describe('Pinia Debounce', () => {
   })
 
   describe('debounce function parameters', () => {
-    let debounce: SpyInstance<any[], any>
+    let debounce: MockInstance<(...args: any[]) => any>
 
     beforeEach(() => {
       const pinia = createPinia()
       debounce = vi.fn()
       // @ts-expect-error: pinia._p is an internal property
-      pinia._p.push(
-        // @ts-expect-error: spy instance
-        PiniaDebounce(debounce)
-      )
+      pinia._p.push(PiniaDebounce(debounce))
       setActivePinia(pinia)
     })
 
