@@ -1,4 +1,4 @@
-import { PiniaPluginContext } from 'pinia'
+import type { PiniaPluginContext, StoreActions } from 'pinia'
 
 /**
  * Accepted interface for the debounce function passed to `PiniaDebounce`.
